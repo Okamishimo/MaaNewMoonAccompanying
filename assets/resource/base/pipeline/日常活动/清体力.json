@@ -1,18 +1,26 @@
 {
-    "__yamaape_config_清体力": {
-        "filename": "清体力",
-        "version": "v0.3.4",
-        "export": "",
-        "prefix": "清体力"
+    "__mpe_config_清体力": {
+        "__mpe_code": {
+            "prefix": "清体力",
+            "filename": "清体力",
+            "version": "v0.5.3"
+        }
     },
     "清体力_战略行动": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "战略行动"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "战略行动"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 进入战略行动",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 250,
                 "y": -48
@@ -23,14 +31,21 @@
         ]
     },
     "清体力_关卡选择": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "象征车厢"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "象征车厢"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 200,
         "focus": "> 选择指定关卡",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 567,
                 "y": -55
@@ -41,13 +56,20 @@
         ]
     },
     "清体力_象征车厢": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "象征车厢"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "象征车厢"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 887,
                 "y": 114
@@ -58,14 +80,21 @@
         ]
     },
     "清体力_经验本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 0,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1151,
                 "y": 116
@@ -76,15 +105,22 @@
         ]
     },
     "清体力_准备战斗": {
-        "recognition": "OCR",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "开始挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "post_delay": 500,
-        "expected": [
-            "开始挑战"
-        ],
         "timeout": 1000,
         "focus": "> 检查多倍战斗",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 2648,
                 "y": 41
@@ -98,12 +134,19 @@
         ]
     },
     "清体力_检查多倍战斗": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "checkless.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "checkless.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 2910,
                 "y": 40
@@ -114,13 +157,20 @@
         ]
     },
     "清体力_倍率选择4": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "cycle.png"
-        ],
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "cycle.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 尝试选择合适倍率",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3183,
                 "y": 127
@@ -131,20 +181,27 @@
         ]
     },
     "清体力_4X": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "x4",
-            "×4"
-        ],
-        "order_by": "Vertical",
-        "roi": [
-            848,
-            416,
-            118,
-            175
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "x4",
+                    "×4"
+                ],
+                "order_by": "Vertical",
+                "roi": [
+                    848,
+                    416,
+                    118,
+                    175
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3433,
                 "y": 138
@@ -155,12 +212,19 @@
         ]
     },
     "清体力_开始挑战4": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "开始挑战"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "开始挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4024,
                 "y": 243
@@ -173,13 +237,20 @@
         ]
     },
     "清体力_没的吃了": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "是否消耗40个超相尘"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "是否消耗40个超相尘"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 合剂数量不足",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 2655,
                 "y": 358
@@ -190,12 +261,19 @@
         ]
     },
     "清体力_判断合剂余量": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "是否消耗1个"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "是否消耗1个"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 2930,
                 "y": 359
@@ -206,12 +284,19 @@
         ]
     },
     "清体力_4x行动前检测1": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "行动开始"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4292,
                 "y": 239
@@ -222,12 +307,19 @@
         ]
     },
     "清体力_返回倍率选择3": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "close.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3165,
                 "y": 816
@@ -238,12 +330,19 @@
         ]
     },
     "清体力_判断设定余量": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "check_eat_times",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "check_eat_times"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3177,
                 "y": 341
@@ -257,12 +356,19 @@
         ]
     },
     "清体力_4x行动前检测2": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "行动开始"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4316,
                 "y": 414
@@ -273,12 +379,19 @@
         ]
     },
     "清体力_倍率选择3": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "cycle.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "cycle.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3420,
                 "y": 815
@@ -289,13 +402,20 @@
         ]
     },
     "清体力_使用稳定合剂": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "确定"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 使用稳定合剂",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3430,
                 "y": 356
@@ -306,12 +426,18 @@
         ]
     },
     "清体力_检查将过期合剂": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 0,
         "post_delay": 0,
         "timeout": 1000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 2910,
                 "y": 578
@@ -325,16 +451,23 @@
         ]
     },
     "清体力_4X行动": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "行动开始"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 800,
         "timeout": 300000,
         "rate_limit": 2000,
         "focus": "> 开始行动",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4588,
                 "y": 253
@@ -350,20 +483,27 @@
         ]
     },
     "清体力_3X": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "x3",
-            "×3"
-        ],
-        "order_by": "Vertical",
-        "roi": [
-            848,
-            416,
-            118,
-            175
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "x3",
+                    "×3"
+                ],
+                "order_by": "Vertical",
+                "roi": [
+                    848,
+                    416,
+                    118,
+                    175
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3672,
                 "y": 816
@@ -374,11 +514,18 @@
         ]
     },
     "清体力_记录使用合剂": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "record_periodic_check",
-        "custom_action_param": "t=eat",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "record_periodic_check",
+                "custom_action_param": "t=eat"
+            }
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3679,
                 "y": 353
@@ -389,14 +536,21 @@
         ]
     },
     "清体力_4X升级": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "点击空白处关闭"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击空白处关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 800,
         "focus": "> 玩家升级",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4861,
                 "y": 252
@@ -407,14 +561,21 @@
         ]
     },
     "清体力_结束行动并检查": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "确定"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
         "focus": "> 作战结束，再次尝试选择合适倍率",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 5168,
                 "y": 84
@@ -425,12 +586,19 @@
         ]
     },
     "清体力_确定4X战斗": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "行动开始"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4860,
                 "y": 471
@@ -438,12 +606,19 @@
         }
     },
     "清体力_等待指令": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "瞬时调度"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "瞬时调度"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 5250,
                 "y": 536
@@ -454,12 +629,19 @@
         ]
     },
     "清体力_开始挑战3": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "开始挑战"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "开始挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3925,
                 "y": 817
@@ -471,12 +653,19 @@
         ]
     },
     "清体力_关闭合剂界面": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "取消"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3935,
                 "y": 411
@@ -487,13 +676,25 @@
         ]
     },
     "清体力_自动战斗": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "cycle_outlined.png"
-        ],
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "cycle_outlined.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ],
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 1000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 5502,
                 "y": 533
@@ -501,12 +702,19 @@
         }
     },
     "清体力_返回倍率选择2": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "close.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3160,
                 "y": 1037
@@ -517,12 +725,19 @@
         ]
     },
     "清体力_3X及以下行动前检测1": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "行动开始"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4273,
                 "y": 986
@@ -533,12 +748,19 @@
         ]
     },
     "清体力_倍率选择2": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "cycle.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "cycle.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3405,
                 "y": 1034
@@ -549,12 +771,19 @@
         ]
     },
     "清体力_3X及以下行动前检测2": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "行动开始"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4307,
                 "y": 1143
@@ -565,20 +794,27 @@
         ]
     },
     "清体力_2X": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "x2",
-            "×2"
-        ],
-        "order_by": "Vertical",
-        "roi": [
-            848,
-            416,
-            118,
-            175
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "x2",
+                    "×2"
+                ],
+                "order_by": "Vertical",
+                "roi": [
+                    848,
+                    416,
+                    118,
+                    175
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3667,
                 "y": 1033
@@ -589,16 +825,23 @@
         ]
     },
     "清体力_3X及以下行动": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "行动开始"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 800,
         "timeout": 300000,
         "rate_limit": 2000,
         "focus": "> 开始行动",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4579,
                 "y": 1016
@@ -614,12 +857,19 @@
         ]
     },
     "清体力_开始挑战2": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "开始挑战"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "开始挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3942,
                 "y": 1049
@@ -631,14 +881,21 @@
         ]
     },
     "清体力_3X及以下升级": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "点击空白处关闭"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击空白处关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 800,
         "focus": "> 玩家升级",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4868,
                 "y": 1016
@@ -649,14 +906,21 @@
         ]
     },
     "清体力_行动结束": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "确定"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
         "focus": "> 体力耗尽",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4866,
                 "y": 1239
@@ -667,12 +931,19 @@
         ]
     },
     "清体力_确定3X及以下战斗": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "行动开始"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "行动开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4605,
                 "y": 1295
@@ -680,12 +951,19 @@
         }
     },
     "清体力_返回倍率选择1": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "close.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3164,
                 "y": 1274
@@ -696,14 +974,21 @@
         ]
     },
     "清体力_再动": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "确定"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
         "focus": "> 作战结束，使用升级体力再次作战",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 5157,
                 "y": 928
@@ -714,11 +999,18 @@
         ]
     },
     "清体力_回到主页": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "run",
-        "custom_action_param": "key=返回主页",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "run",
+                "custom_action_param": "key=返回主页"
+            }
+        },
+        "__mpe_code": {
             "position": {
                 "x": 5157,
                 "y": 1415
@@ -729,12 +1021,19 @@
         ]
     },
     "清体力_倍率选择1": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "cycle.png"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "cycle.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3408,
                 "y": 1279
@@ -745,9 +1044,15 @@
         ]
     },
     "清体力_结束": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 5405,
                 "y": 1417
@@ -755,20 +1060,27 @@
         }
     },
     "清体力_1X": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "x1",
-            "×1"
-        ],
-        "order_by": "Vertical",
-        "roi": [
-            848,
-            416,
-            118,
-            175
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "x1",
+                    "×1"
+                ],
+                "order_by": "Vertical",
+                "roi": [
+                    848,
+                    416,
+                    118,
+                    175
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3666,
                 "y": 1278
@@ -779,12 +1091,19 @@
         ]
     },
     "清体力_开始挑战1": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "开始挑战"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "开始挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 3943,
                 "y": 1278
@@ -796,14 +1115,21 @@
         ]
     },
     "清体力_体力耗尽": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "close.png"
-        ],
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 体力耗尽",
         "pre_delay": 400,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4250,
                 "y": 1446
@@ -814,13 +1140,20 @@
         ]
     },
     "清体力_设置助战": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "设置助战"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "设置助战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 设置助战",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3890,
                 "y": 2705
@@ -832,13 +1165,20 @@
         ]
     },
     "清体力_检查剩余助战次数": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "今日助战次数已不足"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "今日助战次数已不足"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 今日助战次数已耗尽",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4155,
                 "y": 2927
@@ -849,14 +1189,21 @@
         ]
     },
     "清体力_选择助战": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "battle/assistance.png"
-        ],
-        "order_by": "Random",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "battle/assistance.png"
+                ],
+                "order_by": "Random"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4157,
                 "y": 2703
@@ -867,9 +1214,15 @@
         ]
     },
     "清体力_设置助战结束": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4953,
                 "y": 3101
@@ -877,16 +1230,23 @@
         }
     },
     "清体力_编入7号位": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            124,
-            518,
-            100,
-            100
-        ],
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    124,
+                    518,
+                    100,
+                    100
+                ]
+            }
+        },
         "timeout": 2000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4411,
                 "y": 2699
@@ -900,13 +1260,20 @@
         ]
     },
     "清体力_已存在相同特工": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "已存在相同特工"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "已存在相同特工"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 已存在相同特工，尝试重新选择助战",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4671,
                 "y": 2699
@@ -917,11 +1284,18 @@
         ]
     },
     "清体力_助战周期记录": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "record_periodic_check",
-        "custom_action_param": "t=assistance",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "record_periodic_check",
+                "custom_action_param": "t=assistance"
+            }
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4673,
                 "y": 2899
@@ -932,13 +1306,20 @@
         ]
     },
     "清体力_取消下阵": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "取消"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4919,
                 "y": 2692
@@ -949,13 +1330,20 @@
         ]
     },
     "清体力_返回重选": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "back.png"
-        ],
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "back.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 5179,
                 "y": 2559
@@ -966,14 +1354,21 @@
         ]
     },
     "清体力_刷新助战": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "刷新列表"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "刷新列表"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
         "post_delay": 1200,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3911,
                 "y": 2484
@@ -984,14 +1379,21 @@
         ]
     },
     "清体力_数构银本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 1,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1150,
                 "y": 334
@@ -1002,13 +1404,20 @@
         ]
     },
     "清体力_作战认证书": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "分析车厢"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "分析车厢"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 889,
                 "y": 792
@@ -1019,14 +1428,21 @@
         ]
     },
     "清体力_红本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 0,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1149,
                 "y": 796
@@ -1037,14 +1453,21 @@
         ]
     },
     "清体力_蓝本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 1,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1149,
                 "y": 1017
@@ -1055,14 +1478,21 @@
         ]
     },
     "清体力_绿本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 2,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 2
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1148,
                 "y": 1241
@@ -1073,14 +1503,21 @@
         ]
     },
     "清体力_黄本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": -2,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": -2
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1405,
                 "y": 1463
@@ -1091,14 +1528,21 @@
         ]
     },
     "清体力_紫本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": -1,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1401,
                 "y": 1687
@@ -1109,14 +1553,21 @@
         ]
     },
     "清体力_强攻本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 0,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1143,
                 "y": 1919
@@ -1127,14 +1578,21 @@
         ]
     },
     "清体力_特攻本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 1,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1141,
                 "y": 2151
@@ -1145,14 +1603,21 @@
         ]
     },
     "清体力_突击本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 2,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 2
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1137,
                 "y": 2378
@@ -1163,14 +1628,21 @@
         ]
     },
     "清体力_防护本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": -2,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": -2
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1390,
                 "y": 2605
@@ -1181,14 +1653,21 @@
         ]
     },
     "清体力_辅助本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": -1,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1392,
                 "y": 2840
@@ -1199,13 +1678,20 @@
         ]
     },
     "清体力_演练卷": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "景观车厢"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "景观车厢"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 890,
                 "y": 1919
@@ -1216,14 +1702,21 @@
         ]
     },
     "清体力_整流器本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 1,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 1
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1136,
                 "y": 3071
@@ -1234,14 +1727,21 @@
         ]
     },
     "清体力_卡带本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 0,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1135,
                 "y": 3548
@@ -1252,15 +1752,22 @@
         ]
     },
     "清体力_选择卡带": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "查看详情"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "查看详情"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 400,
         "post_delay": 500,
         "timeout": 1000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1393,
                 "y": 3548
@@ -1274,12 +1781,19 @@
         ]
     },
     "清体力_冷酷者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "冷酷者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "冷酷者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1898,
                 "y": 3545
@@ -1290,24 +1804,33 @@
         ]
     },
     "清体力_卡带堆顶": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            380,
-            220,
-            1,
-            1
-        ],
-        "end": [
-            380,
-            500,
-            1,
-            1
-        ],
-        "duration": 200,
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    380,
+                    220,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        380,
+                        500,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": 200
+            }
+        },
         "post_delay": 1500,
         "timeout": 10000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1642,
                 "y": 3547
@@ -1321,12 +1844,19 @@
         ]
     },
     "清体力_确认卡带": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "确定"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 2222,
                 "y": 2088
@@ -1337,23 +1867,32 @@
         ]
     },
     "清体力_卡带下滑": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            380,
-            400,
-            1,
-            1
-        ],
-        "end": [
-            380,
-            300,
-            1,
-            1
-        ],
-        "duration": 200,
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    380,
+                    400,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        380,
+                        300,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": 200
+            }
+        },
         "post_delay": 400,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1375,
                 "y": 3850
@@ -1364,15 +1903,22 @@
         ]
     },
     "清体力_卡带停住": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            380,
-            220,
-            1,
-            1
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    380,
+                    220,
+                    1,
+                    1
+                ]
+            }
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1642,
                 "y": 3846
@@ -1380,12 +1926,19 @@
         }
     },
     "清体力_承压者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "承压者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "承压者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1904,
                 "y": 2263
@@ -1396,12 +1949,19 @@
         ]
     },
     "清体力_顿悟者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "顿悟者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "顿悟者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1902,
                 "y": 2429
@@ -1412,12 +1972,19 @@
         ]
     },
     "清体力_苦修者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "苦修者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "苦修者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1900,
                 "y": 2587
@@ -1428,12 +1995,19 @@
         ]
     },
     "清体力_隐世者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "隐世者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "隐世者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1901,
                 "y": 2746
@@ -1444,12 +2018,19 @@
         ]
     },
     "清体力_惊惧者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "惊惧者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "惊惧者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1900,
                 "y": 2906
@@ -1460,12 +2041,19 @@
         ]
     },
     "清体力_改造者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "改造者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "改造者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1900,
                 "y": 3066
@@ -1476,12 +2064,19 @@
         ]
     },
     "清体力_震荡者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "震荡者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "震荡者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1901,
                 "y": 3222
@@ -1492,12 +2087,19 @@
         ]
     },
     "清体力_扭曲者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "扭曲者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "扭曲者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1899,
                 "y": 3382
@@ -1508,22 +2110,31 @@
         ]
     },
     "清体力_紫本下划": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            760,
-            540,
-            1,
-            1
-        ],
-        "end": [
-            760,
-            210,
-            1,
-            1
-        ],
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    760,
+                    540,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        760,
+                        210,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1141,
                 "y": 1687
@@ -1534,22 +2145,31 @@
         ]
     },
     "清体力_黄本下划": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            760,
-            540,
-            1,
-            1
-        ],
-        "end": [
-            760,
-            210,
-            1,
-            1
-        ],
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    760,
+                    540,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        760,
+                        210,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1150,
                 "y": 1466
@@ -1560,22 +2180,31 @@
         ]
     },
     "清体力_防护本下划": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            760,
-            540,
-            1,
-            1
-        ],
-        "end": [
-            760,
-            210,
-            1,
-            1
-        ],
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    760,
+                    540,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        760,
+                        210,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1136,
                 "y": 2608
@@ -1586,22 +2215,31 @@
         ]
     },
     "清体力_辅助本下划": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            760,
-            540,
-            1,
-            1
-        ],
-        "end": [
-            760,
-            210,
-            1,
-            1
-        ],
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    760,
+                    540,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        760,
+                        210,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1135,
                 "y": 2840
@@ -1612,13 +2250,20 @@
         ]
     },
     "清体力_卡带": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "卡带车厢"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "卡带车厢"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 500,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 881,
                 "y": 3071
@@ -1629,11 +2274,18 @@
         ]
     },
     "清体力_设定合剂消耗": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "set_eat_times",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_eat_times"
+            }
+        },
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -838,
                 "y": -139
@@ -1644,11 +2296,18 @@
         ]
     },
     "清体力_设定指定队伍": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "cr_set_squad",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "cr_set_squad"
+            }
+        },
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -578,
                 "y": -139
@@ -1659,13 +2318,20 @@
         ]
     },
     "清体力_设定检查队伍次数": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "init_counter",
-        "custom_action_param": "key=check_squad&max=1",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "init_counter",
+                "custom_action_param": "key=check_squad&max=1"
+            }
+        },
         "pre_delay": 1,
         "post_delay": 1,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -318,
                 "y": -136
@@ -1676,11 +2342,18 @@
         ]
     },
     "清体力_执行前返回主页": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "run",
-        "custom_action_param": "key=全局前置返回主页",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "run",
+                "custom_action_param": "key=全局前置返回主页"
+            }
+        },
+        "__mpe_code": {
             "position": {
                 "x": -36,
                 "y": -110
@@ -1691,11 +2364,17 @@
         ]
     },
     "清体力_指定作战队伍": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "post_delay": 0,
         "pre_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3753,
                 "y": 1932
@@ -1706,14 +2385,21 @@
         ]
     },
     "清体力_检测是否已检测": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "count",
-        "custom_action_param": "key=check_squad",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "count",
+                "custom_action_param": "key=check_squad"
+            }
+        },
         "focus": "> 检查配队",
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4013,
                 "y": 1884
@@ -1727,11 +2413,18 @@
         ]
     },
     "清体力_调整配队": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "run_set_squad",
-        "custom_action_param": "e=",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "run_set_squad",
+                "custom_action_param": "e="
+            }
+        },
+        "__mpe_code": {
             "position": {
                 "x": 4271,
                 "y": 1866
@@ -1742,11 +2435,17 @@
         ]
     },
     "清体力_结束配队": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 4534,
                 "y": 1994
@@ -1754,13 +2453,20 @@
         }
     },
     "清体力_4X队伍": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "set_str_node_attrs",
-        "custom_action_param": "node=清体力_结束配队&keys=next&values=清体力_4x行动前检测2",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_str_node_attrs",
+                "custom_action_param": "node=清体力_结束配队&keys=next&values=清体力_4x行动前检测2"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3469,
                 "y": 1809
@@ -1771,13 +2477,20 @@
         ]
     },
     "清体力_3X队伍": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "set_str_node_attrs",
-        "custom_action_param": "node=清体力_结束配队&keys=next&values=清体力_3X及以下行动前检测2",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_str_node_attrs",
+                "custom_action_param": "node=清体力_结束配队&keys=next&values=清体力_3X及以下行动前检测2"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3472,
                 "y": 2065
@@ -1788,12 +2501,19 @@
         ]
     },
     "清体力_跳过使用合剂节点": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "set_str_node_attrs",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_str_node_attrs",
+                "custom_action_param": "node=清体力_判断合剂余量&keys=next&values=清体力_检查将过期合剂"
+            }
+        },
         "post_delay": 0,
-        "custom_action_param": "node=清体力_判断合剂余量&keys=next&values=清体力_检查将过期合剂",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -832,
                 "y": 90
@@ -1804,9 +2524,15 @@
         ]
     },
     "清体力_开始": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": -1378,
                 "y": -82
@@ -1817,12 +2543,19 @@
         ]
     },
     "清体力_是否仅首次使用合剂": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "periodic_check",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "periodic_check",
+                "custom_action_param": "t=eat"
+            }
+        },
         "post_delay": 0,
-        "custom_action_param": "t=eat",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -1113,
                 "y": 40
@@ -1836,13 +2569,20 @@
         ]
     },
     "清体力_4X助战": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "set_str_node_attrs",
-        "custom_action_param": "node=清体力_设置助战结束&keys=next&values=清体力_4X行动",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_str_node_attrs",
+                "custom_action_param": "node=清体力_设置助战结束&keys=next&values=清体力_4X行动"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3087,
                 "y": 2580
@@ -1853,11 +2593,17 @@
         ]
     },
     "清体力_助战": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3365,
                 "y": 2703
@@ -1868,13 +2614,20 @@
         ]
     },
     "清体力_助战周期检查": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "periodic_check",
-        "custom_action_param": "t=assistance",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "periodic_check",
+                "custom_action_param": "t=assistance"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3625,
                 "y": 2703
@@ -1888,10 +2641,16 @@
         ]
     },
     "清体力_今日已助战": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 今日已助战",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3694,
                 "y": 2982
@@ -1902,13 +2661,20 @@
         ]
     },
     "清体力_3X助战": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "set_str_node_attrs",
-        "custom_action_param": "node=清体力_设置助战结束&keys=next&values=清体力_3X及以下行动",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_str_node_attrs",
+                "custom_action_param": "node=清体力_设置助战结束&keys=next&values=清体力_3X及以下行动"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3089,
                 "y": 2840
@@ -1919,14 +2685,21 @@
         ]
     },
     "清体力_合约本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 2,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 2
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1151,
                 "y": 560
@@ -1937,14 +2710,21 @@
         ]
     },
     "清体力_苦味喷剂本": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "前往"
-        ],
-        "order_by": "Vertical",
-        "index": 2,
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往"
+                ],
+                "order_by": "Vertical",
+                "index": 2
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1137,
                 "y": 3302
@@ -1955,19 +2735,26 @@
         ]
     },
     "清体力_存在将过期合剂": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "时"
-        ],
-        "roi": [
-            484,
-            301,
-            547,
-            151
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "时"
+                ],
+                "roi": [
+                    484,
+                    301,
+                    547,
+                    151
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 存在即将过期合剂",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 3171,
                 "y": 580
@@ -1978,12 +2765,19 @@
         ]
     },
     "清体力_冒险者": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "冒险者产线"
-        ],
-        "__yamaape": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "冒险者产线"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": 1903,
                 "y": 2090

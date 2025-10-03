@@ -1,17 +1,17 @@
-import ConsumptiveRealism
-import Platform
-import PeriodicInspection
-import Strap
-import Counter
-import Procurement
-import Timer
-import Pipeliner
-import CityWalk
-import IceDrink
-import AgentTraining
-import MatrixScheduling
-import Activities
-import Global
-import Abyss
-import PipeLauncher
-import Liaison
+from .ConsumptiveRealism import *
+from .Platform import *
+from .PeriodicInspection import *
+from .Strap import *
+from .Counter import *
+from .Procurement import *
+from .Timer import *
+from .Pipeliner import *
+from .CityWalk import *
+from .IceDrink import *
+from .AgentTraining import *
+from .MatrixScheduling import *
+from .Activities import *
+from .Global import *
+from .Abyss import *
+from .PipeLauncher import *
+from .Liaison import *
