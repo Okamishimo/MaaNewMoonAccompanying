@@ -7,6 +7,7 @@ sys.stderr.reconfigure(encoding="gbk")
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from agent.setup import check_and_install_dependencies
+from agent.report import punch_in
 
 
 def main():
@@ -28,5 +29,6 @@ def main():
 
 
 if __name__ == "__main__":
+    punch_in()
     check_and_install_dependencies()
     main()
