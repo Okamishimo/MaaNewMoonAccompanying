@@ -119,6 +119,15 @@
             "check": true
         },
         {
+            "name": "「列车长」领取体力",
+            "entry": "列车长_开始",
+            "option": [
+                "每日仅检查一次列车长"
+            ],
+            "doc": "**「列车长的见面礼」领取体力**：\n\n自动领取体力并完成双倍战斗\n\n开始界面：主界面\n\n结束界面：主界面",
+            "check": true
+        },
+        {
             "name": "清体力",
             "entry": "清体力_开始",
             "advanced": [
@@ -787,6 +796,22 @@
                     "pipeline_override": {
                         "友谊交换_互助结束": {
                             "next": "友谊交换_返回主界面"
+                        }
+                    }
+                }
+            ]
+        },
+        "每日仅检查一次列车长": {
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "列车长_周期检查": {
+                            "action": "DoNothing"
                         }
                     }
                 }
