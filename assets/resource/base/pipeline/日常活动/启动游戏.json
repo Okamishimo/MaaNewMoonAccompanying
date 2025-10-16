@@ -1,16 +1,23 @@
 {
-    "__yamaape_config_启动游戏": {
-        "filename": "启动游戏",
-        "version": "v0.3.4",
-        "export": "",
-        "prefix": "启动游戏"
+    "__mpe_config_启动游戏": {
+        "__mpe_code": {
+            "prefix": "启动游戏",
+            "filename": "启动游戏",
+            "version": "v0.5.3"
+        }
     },
     "启动游戏_检测界面": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "timeout": 25000,
         "focus": "> 检测当前界面",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 250,
                 "y": -33
@@ -26,13 +33,20 @@
         ]
     },
     "启动游戏_更新游戏": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "新版本资源"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "新版本资源"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 游戏版本更新",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 512,
                 "y": -215
@@ -43,16 +57,23 @@
         ]
     },
     "启动游戏_校准现实": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "校准现实"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "校准现实"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "pre_delay": 2000,
         "timeout": 10000,
         "post_delay": 5000,
         "focus": "> 准备进入游戏",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1043,
                 "y": -120
@@ -63,13 +84,20 @@
         ]
     },
     "启动游戏_已在主界面": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "城市探索"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "城市探索"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 检测到主界面",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 546,
                 "y": 59
@@ -80,11 +108,17 @@
         ]
     },
     "启动游戏_尝试检测游戏内界面": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1638,
                 "y": 741
@@ -97,15 +131,23 @@
         ]
     },
     "启动游戏_确定更新": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "确定"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定",
+                    "开始更新"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "timeout": 600000,
         "rate_limit": 3000,
         "pre_delay": 400,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 764,
                 "y": -276
@@ -116,12 +158,19 @@
         ]
     },
     "启动游戏_初始化检测计数": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "init_counter",
-        "custom_action_param": "max=5&exceed=false",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "init_counter",
+                "custom_action_param": "max=5&exceed=false"
+            }
+        },
         "pre_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1323,
                 "y": -119
@@ -132,12 +181,19 @@
         ]
     },
     "启动游戏_短计数": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "init_counter",
-        "custom_action_param": "max=3&exceed=false",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "init_counter",
+                "custom_action_param": "max=3&exceed=false"
+            }
+        },
         "pre_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1324,
                 "y": 314
@@ -148,16 +204,23 @@
         ]
     },
     "启动游戏_关闭弹出面板": {
-        "recognition": "TemplateMatch",
-        "action": "Click",
-        "template": [
-            "close.png",
-            "home.png",
-            "back.png",
-            "jump.png"
-        ],
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png",
+                    "home.png",
+                    "back.png",
+                    "jump.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 关闭弹出面板",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1942,
                 "y": 563
@@ -168,13 +231,20 @@
         ]
     },
     "启动游戏_关闭提示界面": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "点击以继续"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击以继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "focus": "> 关闭提示界面",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1941,
                 "y": 758
@@ -185,16 +255,23 @@
         ]
     },
     "启动游戏_盲目点击": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            25,
-            200,
-            1,
-            1
-        ],
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    25,
+                    200,
+                    1,
+                    1
+                ]
+            }
+        },
         "post_delay": 1000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1945,
                 "y": 1142
@@ -205,11 +282,17 @@
         ]
     },
     "启动游戏_检测当前界面": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1659,
                 "y": 524
@@ -227,13 +310,20 @@
         ]
     },
     "启动游戏_重置计数": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "init_counter",
-        "custom_action_param": "max=5&exceed=false",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "init_counter",
+                "custom_action_param": "max=5&exceed=false"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 2219,
                 "y": 682
@@ -241,14 +331,21 @@
         }
     },
     "启动游戏_主界面": {
-        "recognition": "OCR",
-        "action": "DoNothing",
-        "expected": [
-            "城市探索"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "城市探索"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "pre_delay": 0,
         "post_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1942,
                 "y": 334
@@ -259,13 +356,20 @@
         ]
     },
     "启动游戏_确认校准现实": {
-        "recognition": "OCR",
-        "action": "Click",
-        "expected": [
-            "校准现实"
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "校准现实"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 3000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 1942,
                 "y": 947
@@ -276,12 +380,19 @@
         ]
     },
     "启动游戏_检测计数": {
-        "recognition": "DirectHit",
-        "action": "Custom",
-        "custom_action": "count",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "count"
+            }
+        },
         "pre_delay": 0,
         "post_delay": 1000,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 2216,
                 "y": 251
@@ -295,11 +406,17 @@
         ]
     },
     "启动游戏_检测结束": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
         "focus": "> 已进入主界面",
         "pre_delay": 0,
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": 2501,
                 "y": 366
@@ -307,12 +424,19 @@
         }
     },
     "启动游戏_启动游戏": {
-        "recognition": "DirectHit",
-        "action": "StartApp",
-        "package": "com.firewick.p42",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.firewick.p42"
+            }
+        },
         "post_delay": 3000,
         "focus": "> 尝试启动游戏",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -8,
                 "y": -30
@@ -323,12 +447,19 @@
         ]
     },
     "启动游戏_关闭游戏": {
-        "recognition": "DirectHit",
-        "action": "StopApp",
-        "package": "com.firewick.p42",
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.firewick.p42"
+            }
+        },
         "post_delay": 1000,
         "focus": "> 尝试结束游戏运行",
-        "__yamaape": {
+        "__mpe_code": {
             "position": {
                 "x": -272,
                 "y": -31
@@ -339,9 +470,15 @@
         ]
     },
     "启动游戏_开始": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "__yamaape": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
             "position": {
                 "x": -528,
                 "y": -33
