@@ -1,0 +1,246 @@
+{
+    "__mpe_config_未来记忆": {
+        "__mpe_code": {
+            "prefix": "未来记忆",
+            "filename": "未来记忆",
+            "version": "v0.5.3"
+        }
+    },
+    "未来记忆_奖励界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "可领取奖励"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 400,
+        "post_delay": 1000,
+        "timeout": 2000,
+        "__mpe_code": {
+            "position": {
+                "x": 771,
+                "y": -270
+            }
+        },
+        "next": [
+            "未来记忆_领取奖励"
+        ],
+        "on_error": [
+            "未来记忆_返回主页"
+        ]
+    },
+    "未来记忆_返回主页": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "run",
+                "custom_action_param": "key=返回主页"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1820,
+                "y": -36
+            }
+        }
+    },
+    "未来记忆_领取奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "领取奖励"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 400,
+        "timeout": 2000,
+        "__mpe_code": {
+            "position": {
+                "x": 1031,
+                "y": -270
+            }
+        },
+        "next": [
+            "未来记忆_获得奖励物品"
+        ],
+        "on_error": [
+            "未来记忆_返回主页"
+        ]
+    },
+    "未来记忆_获得奖励物品": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击以继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 800,
+        "__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": -271
+            }
+        },
+        "next": [
+            "未来记忆_周期记录"
+        ]
+    },
+    "未来记忆_开始": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": -285,
+                "y": -139
+            }
+        },
+        "next": [
+            "未来记忆_周期检查"
+        ]
+    },
+    "未来记忆_执行前返回主界面": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "run",
+                "custom_action_param": "key=全局前置返回主页"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 238,
+                "y": -146
+            }
+        },
+        "next": [
+            "未来记忆_进入活动界面"
+        ]
+    },
+    "未来记忆_进入活动界面": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "run_enter_activity",
+                "custom_action_param": "title=未来记忆"
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "timeout": 2000,
+        "__mpe_code": {
+            "position": {
+                "x": 498,
+                "y": -152
+            }
+        },
+        "next": [
+            "未来记忆_奖励界面"
+        ],
+        "on_error": [
+            "未来记忆_返回主页"
+        ]
+    },
+    "未来记忆_周期检查": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "periodic_check",
+                "custom_action_param": "t=未来记忆"
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "__mpe_code": {
+            "position": {
+                "x": -28,
+                "y": -143
+            }
+        },
+        "next": [
+            "未来记忆_执行前返回主界面"
+        ],
+        "on_error": [
+            "未来记忆_今日已检查"
+        ]
+    },
+    "未来记忆_今日已检查": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "focus": "> 今日已领取奖励",
+        "__mpe_code": {
+            "position": {
+                "x": 238,
+                "y": 50
+            }
+        }
+    },
+    "未来记忆_周期记录": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "record_periodic_check",
+                "custom_action_param": "t=未来记忆"
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "__mpe_code": {
+            "position": {
+                "x": 1554,
+                "y": -271
+            }
+        },
+        "next": [
+            "未来记忆_返回主页"
+        ]
+    }
+}
