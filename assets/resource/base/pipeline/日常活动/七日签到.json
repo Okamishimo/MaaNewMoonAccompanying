@@ -3,7 +3,7 @@
         "__mpe_code": {
             "prefix": "七日签到",
             "filename": "七日签到",
-            "version": "v0.5.3"
+            "version": "v0.5.5"
         }
     },
     "七日签到_领取今日奖励": {
@@ -44,8 +44,8 @@
         "post_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": 1093,
-                "y": 96
+                "x": 1098,
+                "y": 92
             }
         },
         "next": [
@@ -121,15 +121,14 @@
             "type": "OCR",
             "param": {
                 "expected": [
-                    "签到"
+                    "科学的价值"
                 ]
             }
         },
         "action": {
-            "type": "Click",
+            "type": "DoNothing",
             "param": {}
         },
-        "pre_delay": 800,
         "timeout": 2000,
         "__mpe_code": {
             "position": {
@@ -149,7 +148,7 @@
             "type": "OCR",
             "param": {
                 "expected": [
-                    "明日可领"
+                    "明天登录可得"
                 ]
             }
         },
@@ -157,8 +156,8 @@
             "type": "Click",
             "param": {
                 "target_offset": [
-                    -159,
-                    -14,
+                    -137,
+                    0,
                     1,
                     1
                 ]
@@ -168,8 +167,8 @@
         "timeout": 2000,
         "__mpe_code": {
             "position": {
-                "x": 522,
-                "y": -227
+                "x": 524,
+                "y": -256
             }
         },
         "next": [
@@ -184,7 +183,7 @@
             "type": "OCR",
             "param": {
                 "expected": [
-                    "7"
+                    "第7天"
                 ],
                 "index": -1
             }
@@ -197,8 +196,8 @@
         "timeout": 2000,
         "__mpe_code": {
             "position": {
-                "x": 523,
-                "y": 29
+                "x": 525,
+                "y": 0
             }
         },
         "next": [
@@ -214,15 +213,17 @@
             "param": {}
         },
         "action": {
-            "type": "DoNothing",
-            "param": {}
+            "type": "Custom",
+            "param": {
+                "custom_action": "run_enter_activity",
+                "custom_action_param": "title=正乌托邦·上"
+            }
         },
-        "timeout": 3000,
         "focus": "> 进入签到界面",
         "__mpe_code": {
             "position": {
-                "x": -29,
-                "y": 175
+                "x": -40,
+                "y": 152
             }
         },
         "next": [
@@ -245,8 +246,8 @@
         "post_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": -562,
-                "y": 139
+                "x": -571,
+                "y": 144
             }
         },
         "next": [
@@ -267,8 +268,8 @@
         },
         "__mpe_code": {
             "position": {
-                "x": -297,
-                "y": 147
+                "x": -306,
+                "y": 152
             }
         },
         "next": [
@@ -284,12 +285,10 @@
             "type": "DoNothing",
             "param": {}
         },
-        "pre_delay": 0,
-        "post_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": -1092,
-                "y": 137
+                "x": -1101,
+                "y": 142
             }
         },
         "next": [
@@ -312,8 +311,8 @@
         "post_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": -824,
-                "y": 137
+                "x": -833,
+                "y": 142
             }
         },
         "next": [
@@ -335,8 +334,8 @@
         "focus": "> 今日已签到",
         "__mpe_code": {
             "position": {
-                "x": -566,
-                "y": 337
+                "x": -575,
+                "y": 342
             }
         }
     }
