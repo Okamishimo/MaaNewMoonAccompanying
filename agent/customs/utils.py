@@ -12,6 +12,7 @@ import numpy as np
 from openai import OpenAI
 
 
+# 间隔输出
 def cprint(*args, **kwargs):
     time.sleep(0.05)
     print(*args, **kwargs)
@@ -356,6 +357,7 @@ class Judge:
         return bool(re.search(pattern, text))
 
 
+# AI 接口
 class ChatHolder:
     def __init__(
         self,

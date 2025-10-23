@@ -5,6 +5,51 @@ from maa.context import Context
 from .utils import parse_query_args, Prompt, RecoHelper
 
 
+check_quick_event = False
+
+
+# 初始化城市事件
+@AgentServer.custom_action("init_city_walk")
+class InitCityWalk(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        global check_quick_event
+        try:
+            check_quick_event = False
+            return True
+        except Exception as e:
+            return Prompt.error("初始化城市事件", e)
+
+
+# 检查快速事件
+@AgentServer.custom_action("check_quick_event")
+class CheckQuickEvent(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        global check_quick_event
+        try:
+            return not check_quick_event
+        except Exception as e:
+            return Prompt.error("检查快速事件", e)
+
+
+# 记录快速事件
+@AgentServer.custom_action("record_quick_event")
+class RecordQuickEvent(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        global check_quick_event
+        try:
+            check_quick_event = True
+            return True
+        except Exception as e:
+            return Prompt.error("记录快速事件", e)
+
+
+# 指定作战队伍
 @AgentServer.custom_action("set_event_squad")
 class SetEventSquad(CustomAction):
     def run(

@@ -1,8 +1,9 @@
+import time
 from maa.agent.agent_server import AgentServer
 from maa.custom_action import CustomAction
 from maa.context import Context
 
-from .utils import parse_query_args, Prompt
+from .utils import Tasker, parse_query_args, Prompt
 
 
 # 选择编队
@@ -46,3 +47,24 @@ class RunSetSquad(CustomAction):
             return True
         except Exception as e:
             return Prompt.error("进入活动面板", e)
+
+
+# 连续点击
+@AgentServer.custom_action("click_many")
+class ClickMany(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        try:
+            args = parse_query_args(argv)
+            times = args.get("t", "1")
+            times = int(times)
+            interval = args.get("i", "0.4")
+            interval = float(interval)
+            while times > 0:
+                Tasker.click(context, 5, 5)
+                time.sleep(interval)
+                times -= 1
+            return True
+        except Exception as e:
+            return Prompt.error("连续点击", e)

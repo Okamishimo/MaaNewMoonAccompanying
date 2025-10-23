@@ -11,13 +11,15 @@
 <p align="center">
   <a href="https://www.python.org/" target="_blank"><img alt="python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"></a>
   <a href="https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/3.1-%E4%BB%BB%E5%8A%A1%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8D%8F%E8%AE%AE.md" target="_blank"><img alt="pipeline" src="https://img.shields.io/badge/Pipeline-%23876f69?logo=paddypower&logoColor=%23FFFFFF"></a>
-  <a href="https://github.com/kqcoxn/MaaNewMoonAccompanying/releases" target="_blank"><img alt="platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blueviolet"></a>
-  <a href="https://mirrorchyan.com/zh/projects&source=mnma-github-code" target="_blank"><img alt="mirrorc" src="https://img.shields.io/badge/Mirror%E9%85%B1-%239af3f6?logo=countingworkspro&logoColor=4f46e5"></a>
+  <a href="https://github.com/kqcoxn/MaaNewMoonAccompanying/releases" target="_blank"><img alt="platform" src="https://img.shields.io/badge/platform-Windows-blueviolet"></a>
   <br/>
   <a href="https://github.com/kqcoxn/MaaNewMoonAccompanying/commits/main/" target="_blank"><img alt="committs" src="https://img.shields.io/github/commit-activity/m/kqcoxn/MaaNewMoonAccompanying?color=%23ff69b4"></a>
   <a href="https://github.com/kqcoxn/MaaNewMoonAccompanying/stargazers" target="_blank"><img alt="stars" src="https://img.shields.io/github/stars/kqcoxn/MaaNewMoonAccompanying?style=social"></a>
   <a href="https://github.com/kqcoxn/MaaNewMoonAccompanying/releases" target="_blank"><img alt="stars" src="https://img.shields.io/github/downloads/kqcoxn/MaaNewMoonAccompanying/total?style=social"></a>
+  <br/>
+  <a href="https://mirrorchyan.com/zh/projects&source=mnma-github-code" target="_blank"><img alt="mirrorc" src="https://img.shields.io/badge/Mirror%E9%85%B1-%239af3f6?logo=countingworkspro&logoColor=4f46e5"></a>
   <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868" target="_blank"><img alt="QQ交流群" src="https://img.shields.io/badge/QGroup-993245868-0e80c1?logo=qq&logoColor=white"></a>
+  <a href="https://zread.ai/kqcoxn/MaaNewMoonAccompanying" target="_blank"><img alt="AI文档与问答" src="https://img.shields.io/badge/Ask_Zread-_.svg?style=flat&color=00b0aa&labelColor=000000&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTYxNTYgMS42MDAxSDIuMjQxNTZDMS44ODgxIDEuNjAwMSAxLjYwMTU2IDEuODg2NjQgMS42MDE1NiAyLjI0MDFWNC45NjAxQzEuNjAxNTYgNS4zMTM1NiAxLjg4ODEgNS42MDAxIDIuMjQxNTYgNS42MDAxSDQuOTYxNTZDNS4zMTUwMiA1LjYwMDEgNS42MDE1NiA1LjMxMzU2IDUuNjAxNTYgNC45NjAxVjIuMjQwMUM1LjYwMTU2IDEuODg2NjQgNS4zMTUwMiAxLjYwMDEgNC45NjE1NiAxLjYwMDFaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00Ljk2MTU2IDEwLjM5OTlIMi4yNDE1NkMxLjg4ODEgMTAuMzk5OSAxLjYwMTU2IDEwLjY4NjQgMS42MDE1NiAxMS4wMzk5VjEzLjc1OTlDMS42MDE1NiAxNC4xMTM0IDEuODg4MSAxNC4zOTk5IDIuMjQxNTYgMTQuMzk5OUg0Ljk2MTU2QzUuMzE1MDIgMTQuMzk5OSA1LjYwMTU2IDE0LjExMzQgNS42MDE1NiAxMy43NTk5VjExLjAzOTlDNS42MDE1NiAxMC42ODY0IDUuMzE1MDIgMTAuMzk5OSA0Ljk2MTU2IDEwLjM5OTlaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik0xMy43NTg0IDEuNjAwMUgxMS4wMzg0QzEwLjY4NSAxLjYwMDEgMTAuMzk4NCAxLjg4NjY0IDEwLjM5ODQgMi4yNDAxVjQuOTYwMUMxMC4zOTg0IDUuMzEzNTYgMTAuNjg1IDUuNjAwMSAxMS4wMzg0IDUuNjAwMUgxMy43NTg0QzE0LjExMTkgNS42MDAxIDE0LjM5ODQgNS4zMTM1NiAxNC4zOTg0IDQuOTYwMVYyLjI0MDFDMTQuMzk4NCAxLjg4NjY0IDE0LjExMTkgMS42MDAxIDEzLjc1ODQgMS42MDAxWiIgZmlsbD0iI2ZmZiIvPgo8cGF0aCBkPSJNNCAxMkwxMiA0TDQgMTJaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00IDEyTDEyIDQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=ffffff"></a>
 </p>
 
 </div>
@@ -26,15 +28,21 @@
 
 ### 活动功能
 
-> 当前活动：曙光归途（2025.9.25-2025.10.23）
+> 当前活动：正乌托邦（2025.10.23-2025.11.20）
+
+- [x] 「正乌托邦」领取每日
+
+<details>
+<summary>往期活动</summary>
+
+#### 曙光归途
+
+> 2025.9.25 - 2025.10.23
 
 - [x] 「曙光归途」领取每日小熊猫币
 - [x] 「太空资源收集」新了个月
 - [x] 「未来记忆」领取每日奖励
 - [x] 「列车长的见面礼」领取体力
-
-<details>
-<summary>往期活动</summary>
 
 #### 雨中徐行
 
@@ -100,34 +108,39 @@
 - **检查邮件**
   - [x] 领取邮件奖励
   - [x] 删除已读邮件
+- **每日采购**
+  - [x] 免费补给包
+  - [x] 数构银物资
+  - [x] 情报物资
+- **友谊交换**
+  - [x] 情报点互换
+  - [x] 自动同意好友
+  - [x] 好友换新
+- **清体力**
+  - [x] 全种类资源
+  - [x] 自动使用合剂
+  - [x] 自动助战
 - **城市探索**
   - [x] 资源收取
   - [x] 制造订单
   - [x] 设施管理
   - [x] 传闻调查
   - [x] 城市事件
-- **每日采购**
-  - [x] 免费补给包
-  - [x] 数构银物资
+- **每日升级**
+  - [x] 特工升一级
+  - [x] 卡带升一级
 - **领取奖励**
   - [x] 角色升一级
   - [x] 每日/周任务
   - [x] 组长手册
-- **友谊交换**
-  - [x] 情报点互换
-  - [x] 同意好友
-- **清体力**
-  - [x] 全种类资源
-  - [x] 使用合剂
-  - [x] 自动助战
 - **轮换周常**
   - [x] 冰饮大热斗
   - [x] 自动站台肉鸽
-  - [x] 险境复现
   - [x] 拘束塔每周奖励
+  - [ ] 险境复现
 - **连续战斗**
   - [x] 不可自动战斗托管
-  - [x] 危局演练
+  - [x] 连续作战
   - [x] 自动爬塔
 - **实用小功能**
   - [x] 卡带升级

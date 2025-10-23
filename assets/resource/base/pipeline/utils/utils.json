@@ -23,5 +23,11 @@
         "on_error": "null",
         "pre_delay": 0,
         "post_delay": 0
+    },
+    "通用战斗": {
+        "next": "通用战斗_开始",
+        "on_error": "null",
+        "pre_delay": 0,
+        "post_delay": 0
     }
 }
