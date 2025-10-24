@@ -68,24 +68,6 @@ class Inspector:
         return current_datetime.date() == last_date
 
 
-# 记录检查
-@AgentServer.custom_action("record_period")
-class SetLastPeriodicCheck(CustomAction):
-    def run(
-        self, context: Context, argv: CustomAction.RunArg
-    ) -> CustomAction.RunResult | bool:
-        try:
-            args = parse_query_args(argv)
-            task = args.get("t")
-
-            Inspector.record(task)
-
-            return True
-
-        except Exception as e:
-            return Prompt.error("记录检查时间", e)
-
-
 # 周期检查
 @AgentServer.custom_action("periodic_check")
 class PeriodicCheck(CustomAction):
@@ -116,6 +98,20 @@ class PeriodicCheck(CustomAction):
                 Inspector.record(task)
 
             return not flag
-
         except Exception as e:
             return Prompt.error("检查周期任务", e)
+
+
+# 记录检查
+@AgentServer.custom_action("record_period")
+class SetLastPeriodicCheck(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        try:
+            args = parse_query_args(argv)
+            task = args.get("t")
+            Inspector.record(task)
+            return True
+        except Exception as e:
+            return Prompt.error("记录检查时间", e)
