@@ -30,6 +30,8 @@ class CheckQuickEvent(CustomAction):
     ) -> CustomAction.RunResult | bool:
         global check_quick_event
         try:
+            if not RecoHelper(context).recognize("城市探索_识别快速处理").hit():
+                return False
             return not check_quick_event
         except Exception as e:
             return Prompt.error("检查快速事件", e)

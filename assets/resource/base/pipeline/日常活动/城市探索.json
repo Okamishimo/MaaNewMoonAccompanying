@@ -1002,6 +1002,12 @@
             "param": {
                 "expected": [
                     "战斗"
+                ],
+                "roi": [
+                    784,
+                    301,
+                    487,
+                    322
                 ]
             }
         },
@@ -3073,5 +3079,31 @@
         "next": [
             "城市探索_物资类"
         ]
+    },
+    "城市探索_识别快速处理": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "city/quick.png"
+                ],
+                "roi": [
+                    407,
+                    393,
+                    195,
+                    183
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2449,
+                "y": 317
+            }
+        }
     }
 }
