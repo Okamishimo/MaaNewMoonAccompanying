@@ -51,11 +51,7 @@ class AutoSearch(CustomAction):
                     .recognize("十环线圈_识别关卡")
                     .reco_detail.best_result.text
                 )
-                
-                # 无禁模式
-                if level == "第15关":
-                    return True
-                
+
                 # 普通模式
                 ops = levels.get(level, None)
                 if not ops:

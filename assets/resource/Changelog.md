@@ -1,4 +1,4 @@
-# v3.0.2
+# v3.0.3
 
 > 2025.10.27
 
@@ -27,6 +27,5 @@
 ## 其他
 
 - [已有 Mirror 酱 CDK？点击前往高速下载！](https://mirrorchyan.com/zh/projects?rid=MNMA&source=mnma-announcement)
-- 第一次使用请配合 [文档站](https://docs.codax.site/mnma/) 进行下载与安装
-- 在更新时，若您手动下载安装包更新，请勿直接覆盖安装，而应参考 [全量更新](https://docs.codax.site/mnma/guide/users/trick.html#%E5%85%A8%E9%87%8F%E6%9B%B4%E6%96%B0) 方案进行操作
+- 第一次使用请配合 [文档](https://docs.codax.site/mnma/) 进行安装与配置
 - 若出现问题，请在 [交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868) 内进行反馈，而不是 B 站等其他平台。
