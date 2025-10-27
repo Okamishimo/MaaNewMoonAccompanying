@@ -1,0 +1,207 @@
+{
+    "__mpe_config_十环线圈": {
+        "__mpe_code": {
+            "prefix": "十环线圈",
+            "filename": "十环线圈",
+            "version": "v0.5.5"
+        }
+    },
+    "十环线圈_开始": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 4596,
+                "y": 2823
+            }
+        },
+        "next": [
+            "十环线圈_设置操作间隔"
+        ]
+    },
+    "十环线圈_设置操作间隔": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "set_operate_gear",
+                "custom_action_param": "g=m"
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "__mpe_code": {
+            "position": {
+                "x": 4858,
+                "y": 2823
+            }
+        },
+        "next": [
+            "十环线圈_初始化六边形网格"
+        ]
+    },
+    "十环线圈_初始化六边形网格": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "init_hexagon_grid",
+                "custom_action_param": "ox=381&oy=387&gap=85&w=7"
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "__mpe_code": {
+            "position": {
+                "x": 5118,
+                "y": 2823
+            }
+        },
+        "next": [
+            "十环线圈_关闭提示",
+            "十环线圈_开始游戏"
+        ]
+    },
+    "十环线圈_开始游戏": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "shxq"
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "__mpe_code": {
+            "position": {
+                "x": 5378,
+                "y": 2821
+            }
+        },
+        "next": [
+            "十环线圈_结束"
+        ]
+    },
+    "十环线圈_识别关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "关"
+                ],
+                "roi": [
+                    652,
+                    31,
+                    164,
+                    48
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 5675,
+                "y": 3070
+            }
+        }
+    },
+    "十环线圈_关闭提示": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 400,
+        "__mpe_code": {
+            "position": {
+                "x": 5379,
+                "y": 3057
+            }
+        }
+    },
+    "十环线圈_关卡完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "关卡完成"
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 5945,
+                "y": 3070
+            }
+        },
+        "next": [
+            "十环线圈_下一关"
+        ]
+    },
+    "十环线圈_下一关": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "下一关"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 6193,
+                "y": 3073
+            }
+        }
+    },
+    "十环线圈_结束": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "focus": "> 关卡已全部完成！",
+        "__mpe_code": {
+            "position": {
+                "x": 5638,
+                "y": 2821
+            }
+        }
+    }
+}

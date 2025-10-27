@@ -4,7 +4,7 @@ from .PeriodicInspection import *
 from .Counter import *
 from .Timer import *
 from .Pipeliner import *
-from .MatrixScheduling import *
+from .GridScheduling import *
 from .PipeLauncher import *
 from .Rememberer import *
 

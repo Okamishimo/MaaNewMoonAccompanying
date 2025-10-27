@@ -154,6 +154,26 @@ class LocalStorage:
         return cls.write(storage)
 
 
+# 预制数据
+class PresetLoader:
+    # 文件夹路径
+    agent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    presets_dir = os.path.join(agent_dir, "presets")
+
+    # 读取
+    @classmethod
+    def read(cls, filename: str) -> dict:
+        try:
+            if not filename.endswith(".jsonc"):
+                filename += ".jsonc"
+            with open(
+                os.path.join(cls.presets_dir, filename), "r", encoding="utf-8"
+            ) as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            raise ValueError("数据文件丢失！")
+
+
 # 全局设置
 class Configs:
     configs = {}
@@ -184,15 +204,10 @@ class Tasker:
     def _ctrler(context: Context):
         return context.tasker.controller
 
-    # 是否正在停止
+    # 运行单个节点
     @staticmethod
-    def run_node(context: Context, node: str, solo=True):
-        if solo:
-            context.run_task(
-                node, {node: {"next": [], "interrupt": [], "on_error": []}}
-            )
-        else:
-            context.run_task(node)
+    def run_node(context: Context, node: str):
+        context.run_task(node, {node: {"next": [], "interrupt": [], "on_error": []}})
 
     # 是否正在停止
     @staticmethod

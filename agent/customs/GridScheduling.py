@@ -2,7 +2,12 @@ from maa.agent.agent_server import AgentServer
 from maa.custom_action import CustomAction
 from maa.context import Context
 
+import math
+
 from .utils import parse_query_args, Prompt, Tasker
+
+
+# 矩阵操作
 
 
 class StepMatrix:
@@ -51,3 +56,51 @@ class InitStepMatrix(CustomAction):
 
         except Exception as e:
             return Prompt.error("初始化步长矩阵", e)
+
+
+# 六边形网格
+class HexagonGrid:
+    def __init__(self, origin: tuple[int, int], gap: int, width: int):
+        self.origin = (origin[0] - gap, origin[1])
+        self.gap = gap
+        self.width = width
+
+    def get_point(self, l=0, c=0) -> tuple[int, int]:
+        if c < 0:
+            c = self.width - abs(l) + c + 1
+        elif c == 0:
+            c = 1
+        ox = self.gap / 2 * -l
+        x = self.origin[0] + abs(ox) + c * self.gap
+        y = self.origin[1] + ox * math.sqrt(3)
+        return (int(round(x)), int(round(y)))
+
+
+class HexagonGridManager:
+    hexagon_grids = {}
+
+    @classmethod
+    def init(cls, origin: tuple[int, int], gap: int, width: int, key="default"):
+        cls.hexagon_grids[key] = HexagonGrid(origin, gap, width)
+        return cls.hexagon_grids[key]
+
+    @classmethod
+    def get(cls, key="default") -> HexagonGrid:
+        return cls.hexagon_grids[key]
+
+
+# 初始化六边形网格
+@AgentServer.custom_action("init_hexagon_grid")
+class InitHexagonGrid(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        try:
+            args = parse_query_args(argv)
+            origin = (int(args.get("ox")), int(args.get("oy")))
+            gap = int(args.get("gap"))
+            width = int(args.get("w"))
+            HexagonGridManager.init(origin, gap, width)
+            return True
+        except Exception as e:
+            return Prompt.error("初始化六边形网格", e)
