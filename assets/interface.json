@@ -1310,15 +1310,15 @@
             "cases": [
                 {
                     "name": "No",
-                    "pipeline_override": {}
-                },
-                {
-                    "name": "Yes",
                     "pipeline_override": {
                         "城市探索_确保今日未换班": {
                             "action": "DoNothing"
                         }
                     }
+                },
+                {
+                    "name": "Yes",
+                    "pipeline_override": {}
                 }
             ]
         },

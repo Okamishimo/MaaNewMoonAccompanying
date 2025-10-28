@@ -100,10 +100,11 @@
             "param": {}
         },
         "focus": "> 特工换班",
+        "pre_delay": 400,
         "__mpe_code": {
             "position": {
-                "x": 631,
-                "y": 358
+                "x": 630,
+                "y": 326
             }
         },
         "next": [
