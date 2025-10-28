@@ -7,6 +7,6 @@
     "agent": "python ./agent/dev_main.py",
     "debug": "python -m MaaDebugger",
     "dev": "python ./dev/build.py",
-    "release": "git tag -a v3.0.3 -m \"release v3.0.3\" && git push origin v3.0.3"
+    "release": "git tag -a v3.0.4 -m \"release v3.0.4\" && git push origin v3.0.4"
   }
 }
