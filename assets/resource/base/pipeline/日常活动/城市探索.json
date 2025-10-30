@@ -2112,15 +2112,18 @@
                 "template": [
                     "cycle_outlined.png"
                 ],
+                "green_mask": true,
                 "threshold": [
                     0.5
-                ]
+                ],
+                "index": -1
             }
         },
         "action": {
             "type": "Click",
             "param": {}
         },
+        "post_delay": 1000,
         "focus": "> 新剧情，自动打开倍速",
         "__mpe_code": {
             "position": {
@@ -2441,11 +2444,11 @@
                 "template": [
                     "cycle_outlined.png"
                 ],
+                "green_mask": true,
                 "threshold": [
                     0.5
                 ],
-                "index": -1,
-                "green_mask": true
+                "index": -1
             }
         },
         "action": {

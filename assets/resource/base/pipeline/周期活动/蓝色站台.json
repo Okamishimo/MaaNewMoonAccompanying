@@ -677,7 +677,11 @@
             60,
             200
         ],
-        "threshold": 0.4,
+        "green_mask": true,
+        "threshold": [
+            0.5
+        ],
+        "index": -1,
         "post_delay": 1000,
         "__yamaape": {
             "position": {
