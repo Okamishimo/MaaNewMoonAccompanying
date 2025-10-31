@@ -142,6 +142,7 @@
             }
         },
         "pre_delay": 0,
+        "post_delay": 600,
         "__mpe_code": {
             "position": {
                 "x": 520,
