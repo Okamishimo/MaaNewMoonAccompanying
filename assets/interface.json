@@ -1,10 +1,10 @@
 {
     "name": "MaaNewMoonAccompanying",
     "url": "https://github.com/kqcoxn/MaaNewMoonAccompanying",
-    "custom_title": "MNMA新月同行小助手(kqcoxn/MaaNewMoonAccompanying) v3.0.5 - MFAA | 游戏版本：正乌托邦·上",
+    "custom_title": "MNMA新月同行小助手(kqcoxn/MaaNewMoonAccompanying) v3.0.6 - MFAA | 游戏版本：正乌托邦·上",
     "mirrorchyan_rid": "MNMA",
     "mirrorchyan_multiplatform": true,
-    "version": "v3.0.5",
+    "version": "v3.0.6",
     "mfa_min_version": "v1.6.9",
     "mfa_max_version": "v1.6.9",
     "message": "- 新 月 同 行 -",
@@ -516,23 +516,6 @@
         }
     },
     "option": {
-        "日常任务前返回主界面": {
-            "doc": "在执行所有需要从主界面开始的任务前先返回主界\n一般用于日活与周活，在某个任务无法完成时仍可继续执行后续任务\n建议与“监测提醒”搭配使用，确保任务皆正常完成\n此选项开启时会增加较长整体执行时间（每个任务前约增加4s等待）",
-            "cases": [
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "全局设置_执行前返回主页": {
-                            "custom_action_param": "key=pre_back_home&value=false"
-                        }
-                    }
-                },
-                {
-                    "name": "Yes",
-                    "pipeline_override": {}
-                }
-            ]
-        },
         "主界面连续静止时间": {
             "doc": "连续检测n秒是否在主界面（无其他弹窗面板），检测到则尝试关闭并重置连续检测时间。\n时长请根据个人网速等情况调节，若任务结束后仍然没有关闭所有面板请尝试增加此选项的时长",
             "cases": [
