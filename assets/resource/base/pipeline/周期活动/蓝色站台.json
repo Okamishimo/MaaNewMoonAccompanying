@@ -733,7 +733,13 @@
                 "order_by": "Horizontal",
                 "connected": true,
                 "index": -1,
-                "count": 5
+                "count": 5,
+                "roi": [
+                    0,
+                    75,
+                    1268,
+                    521
+                ]
             }
         },
         "action": {
@@ -769,7 +775,13 @@
                 "order_by": "Horizontal",
                 "connected": true,
                 "index": -1,
-                "count": 2
+                "count": 2,
+                "roi": [
+                    0,
+                    75,
+                    1268,
+                    521
+                ]
             }
         },
         "action": {
@@ -808,7 +820,13 @@
                 "order_by": "Horizontal",
                 "connected": true,
                 "index": -1,
-                "count": 3
+                "count": 3,
+                "roi": [
+                    0,
+                    75,
+                    1268,
+                    521
+                ]
             }
         },
         "action": {
