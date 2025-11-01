@@ -25,7 +25,8 @@
             }
         },
         "next": [
-            "返回主页_主界面"
+            "返回主页_主界面",
+            "返回主页_个人页"
         ],
         "interrupt": [
             "返回主页_图像类",
@@ -56,8 +57,8 @@
         "post_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": 839,
-                "y": -84
+                "x": 1058,
+                "y": -78
             }
         },
         "next": [
@@ -92,8 +93,8 @@
         "pre_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": 522,
-                "y": 59
+                "x": 489,
+                "y": 126
             }
         },
         "next": [
@@ -117,8 +118,8 @@
         "pre_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": 522,
-                "y": 311
+                "x": 489,
+                "y": 378
             }
         },
         "next": [
@@ -134,19 +135,18 @@
             "type": "Click",
             "param": {
                 "target": [
-                    30,
-                    30,
+                    5,
+                    5,
                     1,
                     1
                 ]
             }
         },
         "pre_delay": 0,
-        "post_delay": 600,
         "__mpe_code": {
             "position": {
-                "x": 520,
-                "y": 500
+                "x": 487,
+                "y": 567
             }
         },
         "next": [
@@ -169,8 +169,8 @@
         "post_delay": 1000,
         "__mpe_code": {
             "position": {
-                "x": 1092,
-                "y": -300
+                "x": 1311,
+                "y": -294
             }
         },
         "next": [
@@ -193,11 +193,11 @@
             }
         },
         "pre_delay": 0,
-        "post_delay": 1200,
+        "post_delay": 1100,
         "__mpe_code": {
             "position": {
-                "x": 820,
-                "y": 241
+                "x": 789,
+                "y": 207
             }
         },
         "next": [
@@ -220,8 +220,8 @@
         "post_delay": 0,
         "__mpe_code": {
             "position": {
-                "x": 1365,
-                "y": -297
+                "x": 1584,
+                "y": -291
             }
         },
         "next": [
@@ -243,8 +243,8 @@
         "focus": "> 已回到主界面",
         "__mpe_code": {
             "position": {
-                "x": 1641,
-                "y": -20
+                "x": 1860,
+                "y": -14
             }
         }
     },
@@ -260,8 +260,8 @@
         "focus": "返回主界面失败，请立即停止后续任务！",
         "__mpe_code": {
             "position": {
-                "x": 1068,
-                "y": 242
+                "x": 1058,
+                "y": 212
             }
         }
     },
@@ -279,8 +279,8 @@
         "timeout": 500,
         "__mpe_code": {
             "position": {
-                "x": 553,
-                "y": -439
+                "x": 731,
+                "y": -466
             }
         },
         "next": [
@@ -356,6 +356,71 @@
             }
         },
         "next": [
+            "返回主页_初始化计数"
+        ]
+    },
+    "返回主页_个人页": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "入职时间",
+                    "组长生日"
+                ],
+                "roi": [
+                    23,
+                    606,
+                    99,
+                    83
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "focus": "> 检测到卡入个人页，即将返回",
+        "__mpe_code": {
+            "position": {
+                "x": 493,
+                "y": -233
+            }
+        },
+        "next": [
+            "返回主页_从个人页返回"
+        ]
+    },
+    "返回主页_从个人页返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "home.png"
+                ],
+                "roi": [
+                    197,
+                    11,
+                    121,
+                    67
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 800,
+        "timeout": 5000,
+        "__mpe_code": {
+            "position": {
+                "x": 751,
+                "y": -235
+            }
+        },
+        "next": [
+            "返回主页_主界面"
+        ],
+        "on_error": [
             "返回主页_初始化计数"
         ]
     }
