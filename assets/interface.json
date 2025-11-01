@@ -296,6 +296,7 @@
             "entry": "卡带词条_开始",
             "option": [
                 "特征属性要求",
+                "使用较低值作为保底",
                 "目标特征属性",
                 "或匹配特征属性1",
                 "或匹配特征属性2",
@@ -1777,6 +1778,23 @@
                     "pipeline_override": {
                         "卡带词条_设置词条值": {
                             "custom_action_param": "level=high"
+                        }
+                    }
+                }
+            ]
+        },
+        "使用较低值作为保底": {
+            "doc": "当目标值为较高值时，当定向到较低值时先保留较低值，继续抽取较高值",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "卡带词条_保底项": {
+                            "custom_action_param": "value=false"
                         }
                     }
                 }

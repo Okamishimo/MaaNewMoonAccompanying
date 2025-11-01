@@ -4,7 +4,7 @@ from maa.custom_recognition import CustomRecognition
 from maa.context import Context
 import re
 
-from .utils import parse_query_args, Prompt, RecoHelper, Judge
+from .utils import Tasker, parse_query_args, Prompt, RecoHelper, Judge
 from .Counter import counter_manager
 
 index = 0
@@ -186,6 +186,31 @@ special_attr2 = {
 }
 
 
+# 设置保底项
+guaranteed = True
+
+
+@AgentServer.custom_action("allow_strap_guaranteed")
+class SetStrapValue(CustomAction):
+    def run(
+        self, context: Context, argv: CustomAction.RunArg
+    ) -> CustomAction.RunResult | bool:
+        global guaranteed
+
+        try:
+            args = parse_query_args(argv)
+            value = args.get("value", "true")
+            value = value.lower() == "true"
+
+            guaranteed = value
+            if guaranteed:
+                Prompt.log("将使用较低值作为保底项")
+
+            return True
+        except Exception as e:
+            return Prompt.error("设置卡带属性值", e)
+
+
 # 检测属性词条
 @AgentServer.custom_recognition("check_strap_attr")
 class CheckStrapAttr(CustomRecognition):
@@ -194,7 +219,7 @@ class CheckStrapAttr(CustomRecognition):
         context: Context,
         argv: CustomRecognition.AnalyzeArg,
     ) -> CustomRecognition.AnalyzeResult:
-        global target_attr, is_only_high, normal_attr, special_attr1, special_attr2
+        global target_attr, is_only_high, normal_attr, special_attr1, special_attr2, guaranteed
 
         try:
             # 识别
@@ -224,8 +249,15 @@ class CheckStrapAttr(CustomRecognition):
                         # 检测值
                         values = special_list[special_attr]
                         is_hit = Judge.exact_number(text, values[1])
-                        if not is_only_high and Judge.exact_number(text, values[0]):
-                            is_hit = True
+                        if Judge.exact_number(text, values[0]):
+                            if not is_only_high:
+                                is_hit = True
+                            if not is_hit and guaranteed:
+                                RecoHelper(context, argv).recognize(
+                                    "卡带词条_使用新特征"
+                                ).click()
+                            Prompt.log("使用较低值作为保底")
+                        # 命中时返回结果
                         if is_hit:
                             return RecoHelper.rt(results[0].box, text=text)
                 # 通用字段
@@ -237,8 +269,15 @@ class CheckStrapAttr(CustomRecognition):
                         continue
                     # 检测值
                     is_hit = Judge.exact_number(text, values[1])
-                    if not is_only_high and Judge.exact_number(text, values[0]):
-                        is_hit = True
+                    if Judge.exact_number(text, values[0]):
+                        if not is_only_high:
+                            is_hit = True
+                        if not is_hit and guaranteed:
+                            RecoHelper(context, argv).recognize(
+                                "卡带词条_使用新特征"
+                            ).click()
+                            Prompt.log("使用较低值作为保底")
+                    # 命中时返回结果
                     if is_hit:
                         return RecoHelper.rt(results[0].box, text=text)
 
